@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fdfbf7">
+    <meta name="description" content="House-roasted artisan coffee, fresh bakes, and cozy café moments at 4 Monkeys Coffee Roasters.">
+    <title>4 Monkeys Coffee Roasters &amp; Café</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="4 Monkeys Coffee Roasters home">
+                <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                <span class="logo-name">4 Monkeys <span>Coffee Roasters</span></span>
+            </a>
+            <nav class="navbar" id="site-navigation" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact" class="nav-btn">Visit Us</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                    <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    <span class="theme-label">Dark mode</span>
+                </button>
+                <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="coffee-atmosphere" aria-hidden="true">
+                <span class="coffee-ring ring-one"></span>
+                <span class="coffee-ring ring-two"></span>
+                <span class="coffee-bean bean-one"></span>
+                <span class="coffee-bean bean-two"></span>
+                <span class="coffee-bean bean-three"></span>
+                <span class="steam steam-one"></span>
+                <span class="steam steam-two"></span>
+            </div>
+            <div class="hero-content">
+                <div class="rating-badge">
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    4.7 (5,300+ Reviews) <span aria-hidden="true">•</span> ₹200–600 for two
+                </div>
+                <h1>House-Roasted Artisan Coffees &amp; Cozy Vibes</h1>
+                <p>Welcome to Vijayawada's favorite sanctuary for specialty coffee, delectable bakes, and soulful conversations.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="https://wa.me/919346367288" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#about" aria-label="Scroll to learn about the café">
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </a>
+        </section>
+
+        <section class="about section-surface" id="about">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <p class="eyebrow">A little cup of comfort</p>
+                    <h2>An Elegant Ambiance Built for Relaxing Moments</h2>
+                    <p>Located in the heart of Kanaka Durga Power Pet Colony, 4 Monkeys Coffee Roasters brings a modern cafe culture to Eluru. From our signature hand-crafted espresso blends to decadent desserts like the Blueberry Cheesecake, every detail is crafted for perfection.</p>
+                    <div class="features-list">
+                        <div class="feature-item"><i class="fa-solid fa-check" aria-hidden="true"></i> House-Roasted Beans</div>
+                        <div class="feature-item"><i class="fa-solid fa-check" aria-hidden="true"></i> Vegetarian Friendly Options</div>
+                        <div class="feature-item"><i class="fa-solid fa-check" aria-hidden="true"></i> Dine-in &amp; Takeaway</div>
+                        <div class="feature-item"><i class="fa-solid fa-check" aria-hidden="true"></i> Attentive &amp; Polite Service</div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Warm, welcoming café interior" loading="lazy">
+                    <span class="image-caption"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i> Made for slow mornings</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section section-surface" id="menu">
+            <div class="container">
+                <div class="section-title">
+                    <p class="eyebrow">Fresh from our kitchen</p>
+                    <h2>Our Popular Menu Highlights</h2>
+                    <p>Hand-picked favorites loved by our patrons in Eluru</p>
+                </div>
+                <div class="menu-filters" role="group" aria-label="Filter menu items">
+                    <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All Specials</button>
+                    <button class="filter-btn" type="button" data-filter="coffee" aria-pressed="false">Coffee &amp; Beverages</button>
+                    <button class="filter-btn" type="button" data-filter="food" aria-pressed="false">Snacks &amp; Mains</button>
+                    <button class="filter-btn" type="button" data-filter="dessert" aria-pressed="false">Desserts</button>
+                </div>
+                <p class="sr-only" id="filter-status" aria-live="polite"></p>
+
+                <div class="menu-grid">
+                    <article class="menu-card" data-category="coffee">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Irish cappuccino topped with latte art" loading="lazy">
+                            <span class="badge-pop">Popular</span>
+                        </div>
+                        <div class="menu-details">
+                            <div><h3>Irish Cappuccino</h3><p class="desc">Rich espresso blended with textured milk and distinct Irish notes.</p></div>
+                            <div class="price-tag">₹240</div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Blueberry cheesecake with fresh berries" loading="lazy">
+                            <span class="badge-pop">Must Try</span>
+                        </div>
+                        <div class="menu-details">
+                            <div><h3>Blueberry Cheese Cake</h3><p class="desc">Creamy, velvety cheesecake topped with luscious house-made blueberry compote.</p></div>
+                            <div class="price-tag">₹290</div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="food">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Crispy golden chicken bites" loading="lazy">
+                            <span class="badge-pop">Popular</span>
+                        </div>
+                        <div class="menu-details">
+                            <div><h3>Crispy Chicken</h3><p class="desc">Golden-fried tender chicken bites served with a signature house dip.</p></div>
+                            <div class="price-tag">₹340</div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="food">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Crispy fries served with cheese and salsa" loading="lazy">
+                        </div>
+                        <div class="menu-details">
+                            <div><h3>Cheesy Salsa Fries</h3><p class="desc">Crispy french fries loaded with melted cheese and zesty tomato salsa.</p></div>
+                            <div class="price-tag">₹220</div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="coffee">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Iced coffee drink ready to enjoy" loading="lazy">
+                        </div>
+                        <div class="menu-details">
+                            <div><h3>Cold Coffee Shake</h3><p class="desc">Thrill your senses with our ultra-creamy blended iced coffee shake.</p></div>
+                            <div class="price-tag">₹260</div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card" data-category="dessert">
+                        <div class="menu-img">
+                            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&amp;fit=crop&amp;q=80&amp;w=600" alt="Rich chocolate brownie pieces" loading="lazy">
+                        </div>
+                        <div class="menu-details">
+                            <div><h3>Flourless Brownie</h3><p class="desc">Decadent, fudge-heavy dark chocolate brownie baked to rich perfection.</p></div>
+                            <div class="price-tag">₹210</div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section section-surface" id="reviews">
+            <div class="container">
+                <div class="section-title">
+                    <p class="eyebrow">Kind words, shared over coffee</p>
+                    <h2>What Our Guests Say</h2>
+                    <p>Real experiences from coffee lovers and foodies</p>
+                </div>
+                <div class="reviews-grid">
+                    <article class="review-card">
+                        <div class="stars" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>“Best Veg Mexican burger and best cheesy salsa fries! The ambiance is cozy, elegant, and perfect for casual meet-ups.”</p>
+                        <h3>— Local Guide Review</h3>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>“We ordered cheese balls, sweet chilli baby corn, veggie pasta and apple pie. Great quality food and attentive staff!”</p>
+                        <h3>— Verified Diner</h3>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars" aria-label="5 out of 5 stars">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </div>
+                        <p>“The Irish Cappuccino and Blueberry Cheesecake are an absolute match made in heaven. Love spending my evenings here.”</p>
+                        <h3>— Coffee Enthusiast</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <p class="eyebrow">Come say hello</p>
+                <h2>4 Monkeys Coffee Roasters</h2>
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Ground floor, Road #1, 54-20-6, Kanaka Durga Gazetted Officers Colony, Guru Nanak Colony, Vijayawada, Andhra Pradesh 520008</span></p>
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+919346367288">09346367288</a></p>
+                <p><i class="fa-solid fa-clock" aria-hidden="true"></i><span>Open Daily · Closes 10:00 PM</span></p>
+            </div>
+            <div class="footer-map">
+                <iframe title="Map showing the café location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.35!2d80.65!3d16.50!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff!2sVerandah+Coffee+Roasters+and+Caf%C3%A9!5e0!3m2!1sen!2sin!4v1710000000000" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="copyright"><p>&copy; 2026 4 Monkeys Coffee Roasters and Café. All rights reserved.</p></div>
+    </footer>
+</body>
+</html>
